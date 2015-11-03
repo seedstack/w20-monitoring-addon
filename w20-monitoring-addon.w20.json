@@ -1,0 +1,67 @@
+{
+  "id": "w20-monitoring-addon",
+  "name": "Seed base fragment",
+  "version": "1.0.0",
+  "author": "Aymen ABBES, Kavi RAMYEAD, Adrien LAUER",
+  "modules": {
+    "style": {
+      "path": "[css]!{w20-monitoring-addon}/style/style.css",
+      "autoload": true
+    },
+    "batch": {
+      "path": "{w20-monitoring-addon}/modules/batch",
+      "autoload": true,
+      "config": {
+        "restPrefix": "${seed-rest-path:/rest}"
+      }
+    },
+    "directives": {
+      "path": "{w20-monitoring-addon}/modules/directives",
+      "autoload": true
+    }
+  },
+  "w20-core": {
+    "modules": {
+      "notifications": {}
+    }
+  },
+  "w20-components": {
+    "modules": {
+      "select": {},
+      "grid": {}
+    }
+  },
+  "w20-dataviz": {
+    "modules": {
+      "discretebar": {},
+      "pie": {}
+    }
+  },
+  "i18n": {
+    "en": [
+      "{w20-monitoring-addon}/i18n/messages-en.json"
+    ],
+    "fr": [
+      "{w20-monitoring-addon}/i18n/messages-fr.json"
+    ]
+  },
+  "routes": {
+    "/jobs-list": {
+      "templateUrl": "{w20-monitoring-addon}/views/jobs-list.html",
+      "controller": "JobsListController",
+      "security": "hasPermission('seed-w20', ['seed','monitoring','batch','read'])"
+    },
+    "/jobs-list/:jobName": {
+      "templateUrl": "{w20-monitoring-addon}/views/jobs-instance-list.html",
+      "controller": "JobsInstanceListController",
+      "security": "hasPermission('seed-w20', ['seed','monitoring','batch','read'])",
+      "hidden": true
+    },
+    "/jobs-list/:jobName/:jobExecutionId": {
+      "templateUrl": "{w20-monitoring-addon}/views/step-details.html",
+      "controller": "StepDetailsController",
+      "security": "hasPermission('seed-w20', ['seed','monitoring','batch','read'])",
+      "hidden": true
+    }
+  }
+}

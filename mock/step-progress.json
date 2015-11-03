@@ -1,0 +1,20 @@
+{
+    "stepExecutionHistory": {
+        "count": 2,
+        "stepName": "stepName",
+        "prop1": {
+            "count": 2,
+            "max": 3,
+            "min": 1,
+            "mean": 3,
+            "standardDeviation": 3
+        },
+        "prop2": {
+            "count": 2,
+            "max": 3,
+            "min": 1,
+            "mean": 3,
+            "standardDeviation": 3
+        }
+    }
+}

@@ -1,0 +1,95 @@
+<!--
+
+    Copyright (c) 2013-2015 by The SeedStack authors. All rights reserved.
+
+    This file is part of SeedStack, An enterprise-oriented full development stack.
+
+    This Source Code Form is subject to the terms of the Mozilla Public
+    License, v. 2.0. If a copy of the MPL was not distributed with this
+    file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+-->
+<div class="seed-batch container-fluid" data-on-resize data-do="resizeGrids()">
+    <!-- HEADER -->
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="seed-batch-header">
+                <i class="fa fa-dashboard"></i> {{ "application.view.w20-monitoring-addon.maintitle" | localize }}
+            </h1>
+
+            <div data-breadcrumb data-base-path="batch/jobs-list"></div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- JOB EXECUTION CHART -->
+        <div data-ng-class="{'col-md-6': showMap, 'col-md-12': !showMap}">
+            <h4>{{ "application.view.w20-monitoring-addon.jobinstancechart" | localize }}</h4>
+            <div id="discretebar" data-w20-discrete-bar-chart="discreteBarJobInstanceConfig"></div>
+        </div>
+        <!-- RECENT AND CURRENT JOB EXECUTION -->
+        <div data-ng-class="{'col-md-6': showMap, 'col-md-12': !showMap}">
+            <h4>{{ "application.view.w20-monitoring-addon.jobexecution" | localize }} <strong>{{selectedJob}}</strong></h4>
+            <div class="col-md-12" style="text-align: center">
+                <div data-pagination
+                     data-ng-hide="!jobExecution.length"
+                     data-ng-change="changePage()"
+                     total-items="jobsExecutionTotalServerItems"
+                     data-ng-model="pagingOptionsJobExecution.currentPage"
+                     max-size="10"
+                     class="pagination-sm"
+                     rotate="true">
+                </div>
+            </div>
+            <div class="list-group">
+                <div data-ng-repeat="exec in jobExecution"
+                     data-ng-click="goToSteps(exec.id)"
+                     class="item list-group-item col-md-12">
+                    <div class="col-md-6">
+                        <div class="col-md-6">
+                            <small>{{ "application.view.w20-monitoring-addon.id" | localize }}:</small>
+                            <span class="bold">{{ exec.id }}</span>
+                        </div>
+                        <div class="col-md-6">
+                            <small> {{ "application.view.w20-monitoring-addon.statussteperror" | localize }}:</small>
+                            <span class="bold"
+                                  data-ng-class="{'completed': exec.exitStatus.exitCode === 'COMPLETED', 'failed': exec.exitStatus.exitCode === 'FAILED'}"> {{ exec.exitStatus.exitCode }}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-md-6">
+                            <i class="fa fa-dot-circle-o"></i>
+                            <small>{{ "application.view.w20-monitoring-addon.jobParameters" | localize }}:</small>
+                            <span class="bold">{{ exec.jobParameters }}</span>
+                            <br/>
+                            <i class="fa fa-play"></i>
+                            <small>{{ "application.view.w20-monitoring-addon.stepsCount" | localize }}:</small>
+                            <span class="bold">{{ exec.stepExecutionCount }}</span>
+                        </div>
+                        <div class="col-md-6">
+                            <i class="fa fa-calendar"></i>
+                            <small>{{ "application.view.w20-monitoring-addon.start" | localize }}:</small>
+                            <span class="bold">{{ exec.startDate | date }} - {{ exec.startTime }}</span>
+                            <br/>
+                            <i class="fa fa-clock-o"></i>
+                            <small>{{ "application.view.w20-monitoring-addon.duration" | localize }}:</small>
+                            <span class="bold">{{ exec.duration }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12" style="text-align: center">
+                <div data-pagination
+                     data-ng-hide="!jobExecution.length || jobExecution.length < 5"
+                     data-ng-change="changePage()"
+                     total-items="jobsExecutionTotalServerItems"
+                     data-ng-model="pagingOptionsJobExecution.currentPage"
+                     max-size="10"
+                     class="pagination-sm"
+                     rotate="true">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
