@@ -1,0 +1,37 @@
+{
+    "name": "root",
+    "jobNameList": ["Cathy", "Larson"],
+    "children": [
+        {
+            "name": "parent A",
+            "children": [
+                {"name": "child A1"},
+                {"name": "child A2"},
+                {"name": "child A3"}
+            ]
+        },
+        {
+            "name": "parent B",
+            "children": [
+                {"name": "child B1"},
+                {"name": "child B2"}
+            ]
+        },
+        {
+            "name": "parent A",
+            "children": [
+                {"name": "child A1"},
+                {"name": "child A2"},
+                {"name": "child A3"}
+            ]
+        },
+        {
+            "name": "parent A",
+            "children": [
+                {"name": "child A1"},
+                {"name": "child A2"},
+                {"name": "child A3"}
+            ]
+        }
+    ]
+}

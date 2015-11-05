@@ -1,0 +1,24 @@
+<ol class="breadcrumb batch">
+    <li>
+        <button data-ng-show="showBack" data-ng-click="goBack()" class="btn btn-xs btn-success">
+            <i class="fa fa-arrow-left"></i> {{ "application.view.w20-monitoring-addon.back" | localize }}
+        </button>
+    </li>
+    <li>
+        <a href="#!/w20-monitoring-addon/jobs-list">Jobs</a>
+    </li>
+    <li data-ng-if="jobName">
+        <a href="#!/w20-monitoring-addon/jobs-list/{{jobName}}">{{ jobName }}</a>
+    </li>
+    <li data-ng-if="jobExecutionId">
+        <a href="#!/w20-monitoring-addon/jobs-list/{{jobName}}/{{jobExecutionId}}">{{ jobExecutionId }}</a>
+    </li>
+    <span style="float: right">
+        <button class="btn btn-xs btn-polling"
+                data-ng-click="polling()"
+                data-ng-class="{'btn-success': !isPolling, 'btn-danger': isPolling}">
+            <i class="fa" data-ng-class="{'fa-play': !isPolling, 'fa-stop': isPolling}"></i>
+            {{ "application.view.w20-monitoring-addon.update" | localize }} ({{ delta }}s)
+        </button>
+    </span>
+</ol>

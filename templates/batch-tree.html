@@ -1,0 +1,17 @@
+<div class="form-vertical" style="margin-top: 0; border-bottom: 1px solid #ddd; background-color: #F5F5F5; padding: 7px">
+    <label>
+        <input type="text" class="form-control input-sm" id="search-batch" data-ng-model="searchBatch" placeholder="{{ 'application.view.w20-monitoring-addon.search' | localize }}">
+    </label>
+    <label>
+        <select id="select-batch" class="form-control input-sm" data-ng-model="diagramJob" data-ng-options="job for job in jobNameList"></select>
+    </label>
+    <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox1" data-ng-model="completed"> {{ "application.view.w20-monitoring-addon.completed" | localize }}
+    </label>
+    <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox2" data-ng-model="unknown"> {{ "application.view.w20-monitoring-addon.unknown" | localize }}
+    </label>
+    <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox3" data-ng-model="failed"> {{ "application.view.w20-monitoring-addon.failed" | localize }}
+    </label>
+</div>

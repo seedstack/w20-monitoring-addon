@@ -1,0 +1,27 @@
+{
+  "name": "seedstack-monitoring-addon",
+  "version": "2.1.0",
+  "description": "SeedStack monitoring add-on",
+  "license": "MPL 2.0",
+  "contributors": [
+    {
+      "name": "Aymen ABBES",
+      "email": "aymen.abbes@ext.mpsa.com"
+    },
+    {
+      "name": "Adrien LAUER",
+      "email": "adrien.lauer@mpsa.com"
+    },
+    {
+      "name": "Kavi RAMYEAD",
+      "email": "kavi.ramyead@ext.mpsa.com"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "~0.4",
+    "grunt-contrib-clean": "~0.6",
+    "grunt-contrib-jshint": "~0.10",
+    "grunt-bower-task": "~0.4",
+    "grunt-contrib-connect": "~0.10.1"
+  }
+}
