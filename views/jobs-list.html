@@ -1,0 +1,105 @@
+<!--
+
+    Copyright (c) 2013-2015 by The SeedStack authors. All rights reserved.
+
+    This file is part of SeedStack, An enterprise-oriented full development stack.
+
+    This Source Code Form is subject to the terms of the Mozilla Public
+    License, v. 2.0. If a copy of the MPL was not distributed with this
+    file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+-->
+<div>
+    <div data-ng-show="!(authorization.hasPermission('seed-w20', ['seed', 'monitoring', 'batch', 'read']) && authentication.isAuthentifiable())">
+        <div class="alert alert-warning alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <strong>{{ "application.view.w20-monitoring-addon.warning" | localize }}</strong> {{ "application.view.w20-monitoring-addon.accessdenied" | localize }}
+        </div>
+    </div>
+    <div class="seed-batch container-fluid"
+         data-on-resize data-do="resizeGrids()"
+         data-ng-show="authorization.hasPermission('seed-w20', ['seed', 'monitoring', 'batch', 'read']) && authentication.isAuthentifiable()">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="seed-batch-header">
+                    <i class="fa fa-dashboard"></i> {{ "application.view.w20-monitoring-addon.maintitle" | localize }}
+                </h1>
+                <div data-breadcrumb data-base-path="batch/jobs-list"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-3">
+                    <h4>{{ 'application.view.w20-monitoring-addon.jobtabletitle' | localize }}</h4>
+                </div>
+                <div class="col-md-6" style="text-align: center">
+                    <div data-ng-hide="!jobsList.length"
+                         data-pagination
+                         data-ng-change="searchJobs()"
+                         total-items="jobsTotalServerItems"
+                         data-ng-model="pagingOptionsJob.currentPage"
+                         max-size="5"
+                         class="pagination-sm no-margin"
+                         rotate="true">
+                    </div>
+                </div>
+                <div class="col-md-3" style="text-align: right">
+                    <div class="form-group">
+                        <form class="form-inline">
+                            <div class="checkbox">
+                                <label><input type="checkbox" data-ng-model="failedOnly"> {{ "application.view.w20-monitoring-addon.failedOnly" | localize }}</label>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="search-jobs"></label>
+                                <input data-ng-model="searchQuery" data-ng-change="searchJobs()" data-ng-model-options="{ debounce: 1000 }" type="text" class="form-control" id="search-jobs"
+                                       placeholder="Search jobs">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div data-ng-show="!jobsList.length" class="alert alert-info">
+                    {{ "application.view.w20-monitoring-addon.noResults" | localize }}
+                </div>
+                <div class="list-group jobs-list">
+                    <div data-ng-repeat="job in jobsList"
+                         data-ng-hide="failedOnly && chartOverallProgressData[job.name].failed < 1"
+                         data-ng-click="selectJob(job)"
+                         class="item list-group-item col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-md-1 col-sm-2 col-xs-2">
+                            <div id="pieChart-{{ $index }}" class="pieChart"
+                                 data-w20-pie-chart="pieConfig[job.name]"></div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <h4 class="list-group-item-heading">
+                                {{ job.name }}
+                            </h4>
+                            <small>Exec. {{ job.executionCount }}</small>
+                            <small> Incrementable: {{ job.incrementable }}</small>
+                        </div>
+                        <div class="col-md-5 col-sm-4 col-xs-4">
+                            <span data-ng-show="chartOverallProgressData[job.name].failed > 0" class="failed-label pull-right"> <i class="fa fa-warning"></i> {{ chartOverallProgressData[job.name].failed }}
+                                {{ "application.view.w20-monitoring-addon.failed" | localize }}
+                            </span>
+                            <span class="progress-label pull-right">{{ chartOverallProgressData[job.name].completed }} <small>
+                                / {{ job.executionCount }}
+                            </small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-4 col-sm-12" style="text-align: center">
+                <div data-ng-hide="!jobsList.length || jobsList.length < 5"
+                     data-pagination
+                     data-ng-change="searchJobs()"
+                     total-items="jobsTotalServerItems"
+                     data-ng-model="pagingOptionsJob.currentPage"
+                     max-size="5"
+                     class="pagination-sm"
+                     rotate="true">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,555 @@
+{
+    "totalItems": 50,
+    "results": [
+        {
+            "id": 0,
+            "duration": "7:58:59",
+            "jobParameters": "Rosella",
+            "startDate": "Thu Nov 23 1995 15:57:06 GMT+0100 (Paris, Madrid)",
+            "startTime": "Sun Sep 16 2012 00:40:37 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 8,
+            "exitStatus": {
+                "exitCode": "UNKNOWN"
+            }
+        },
+        {
+            "id": 1,
+            "duration": "1:52:50",
+            "jobParameters": "Kidd",
+            "startDate": "Sun Jan 31 1993 06:08:34 GMT+0100 (Paris, Madrid)",
+            "startTime": "Wed Apr 18 1984 11:11:37 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 5,
+            "exitStatus": {
+                "exitCode": "FAILED"
+            }
+        },
+        {
+            "id": 2,
+            "duration": "3:4:58",
+            "jobParameters": "Caroline",
+            "startDate": "Tue Sep 20 2005 02:00:13 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Fri Sep 30 2011 14:02:17 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 2,
+            "exitStatus": {
+                "exitCode": "UNKNOWN"
+            }
+        },
+        {
+            "id": 3,
+            "duration": "8:54:23",
+            "jobParameters": "Sykes",
+            "startDate": "Fri Mar 31 1995 20:54:19 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Tue Oct 04 2005 12:43:07 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 9,
+            "exitStatus": {
+                "exitCode": "FAILED"
+            }
+        },
+        {
+            "id": 4,
+            "duration": "8:54:15",
+            "jobParameters": "Morton",
+            "startDate": "Sat Aug 15 1987 04:06:47 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Sun Nov 21 1999 06:10:26 GMT+0100 (Paris, Madrid)",
+            "stepExecutionCount": 10,
+            "exitStatus": {
+                "exitCode": "UNKNOWN"
+            }
+        },
+        {
+            "id": 5,
+            "duration": "0:23:24",
+            "jobParameters": "White",
+            "startDate": "Mon Nov 19 1984 08:21:53 GMT+0100 (Paris, Madrid)",
+            "startTime": "Fri Sep 11 1992 06:11:17 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 5,
+            "exitStatus": {
+                "exitCode": "COMPLETED"
+            }
+        },
+        {
+            "id": 6,
+            "duration": "0:54:15",
+            "jobParameters": "Tiffany",
+            "startDate": "Sun Jul 02 2006 07:41:16 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Wed Aug 08 1990 23:42:54 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 3,
+            "exitStatus": {
+                "exitCode": "FAILED"
+            }
+        },
+        {
+            "id": 7,
+            "duration": "2:33:12",
+            "jobParameters": "Bernadette",
+            "startDate": "Tue May 12 1992 13:13:44 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Wed Oct 14 1987 16:33:47 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 4,
+            "exitStatus": {
+                "exitCode": "UNKNOWN"
+            }
+        },
+        {
+            "id": 8,
+            "duration": "5:4:39",
+            "jobParameters": "Roslyn",
+            "startDate": "Fri May 16 1986 16:23:00 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Fri Jan 07 1983 08:43:16 GMT+0100 (Paris, Madrid)",
+            "stepExecutionCount": 4,
+            "exitStatus": {
+                "exitCode": "FAILED"
+            }
+        },
+        {
+            "id": 9,
+            "duration": "7:43:28",
+            "jobParameters": "Oneill",
+            "startDate": "Thu Sep 13 1984 23:51:31 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Sun Feb 05 1989 04:20:28 GMT+0100 (Paris, Madrid)",
+            "stepExecutionCount": 0,
+            "exitStatus": {
+                "exitCode": "UNKNOWN"
+            }
+        },
+        {
+            "id": 10,
+            "duration": "2:27:58",
+            "jobParameters": "Karyn",
+            "startDate": "Wed Jun 27 1984 18:43:16 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Tue May 01 2012 22:56:41 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 5,
+            "exitStatus": {
+                "exitCode": "COMPLETED"
+            }
+        },
+        {
+            "id": 11,
+            "duration": "0:52:39",
+            "jobParameters": "Beasley",
+            "startDate": "Thu Oct 24 1991 17:08:17 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Wed Aug 16 1978 19:58:23 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 6,
+            "exitStatus": {
+                "exitCode": "FAILED"
+            }
+        },
+        {
+            "id": 12,
+            "duration": "3:14:58",
+            "jobParameters": "Dorothea",
+            "startDate": "Mon Oct 22 1979 22:40:50 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Tue Apr 10 1973 23:07:13 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 3,
+            "exitStatus": {
+                "exitCode": "FAILED"
+            }
+        },
+        {
+            "id": 13,
+            "duration": "6:41:26",
+            "jobParameters": "Marion",
+            "startDate": "Mon Nov 23 1998 01:58:35 GMT+0100 (Paris, Madrid)",
+            "startTime": "Sat Aug 20 1994 01:17:37 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 0,
+            "exitStatus": {
+                "exitCode": "COMPLETED"
+            }
+        },
+        {
+            "id": 14,
+            "duration": "5:42:36",
+            "jobParameters": "Janette",
+            "startDate": "Tue Feb 01 1983 08:01:27 GMT+0100 (Paris, Madrid)",
+            "startTime": "Fri Jul 12 2013 18:54:02 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 0,
+            "exitStatus": {
+                "exitCode": "FAILED"
+            }
+        },
+        {
+            "id": 15,
+            "duration": "4:43:43",
+            "jobParameters": "Bobbie",
+            "startDate": "Fri Sep 05 1980 12:43:20 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Sun Dec 07 1975 19:51:19 GMT+0100 (Paris, Madrid)",
+            "stepExecutionCount": 8,
+            "exitStatus": {
+                "exitCode": "UNKNOWN"
+            }
+        },
+        {
+            "id": 16,
+            "duration": "3:24:56",
+            "jobParameters": "Mann",
+            "startDate": "Wed Sep 03 1986 21:05:49 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Mon Mar 23 1970 12:28:35 GMT+0100 (Paris, Madrid)",
+            "stepExecutionCount": 9,
+            "exitStatus": {
+                "exitCode": "FAILED"
+            }
+        },
+        {
+            "id": 17,
+            "duration": "3:34:43",
+            "jobParameters": "Aida",
+            "startDate": "Sun May 14 2000 14:05:19 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Mon May 09 1977 09:07:51 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 5,
+            "exitStatus": {
+                "exitCode": "COMPLETED"
+            }
+        },
+        {
+            "id": 18,
+            "duration": "5:29:29",
+            "jobParameters": "Allison",
+            "startDate": "Tue Dec 03 1996 06:46:56 GMT+0100 (Paris, Madrid)",
+            "startTime": "Fri Apr 07 1978 04:21:54 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 4,
+            "exitStatus": {
+                "exitCode": "FAILED"
+            }
+        },
+        {
+            "id": 19,
+            "duration": "5:12:45",
+            "jobParameters": "Allie",
+            "startDate": "Fri Apr 27 1973 03:23:02 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Sat Apr 29 1978 12:23:35 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 0,
+            "exitStatus": {
+                "exitCode": "FAILED"
+            }
+        },
+        {
+            "id": 20,
+            "duration": "5:21:34",
+            "jobParameters": "Arlene",
+            "startDate": "Thu Feb 27 1997 13:02:10 GMT+0100 (Paris, Madrid)",
+            "startTime": "Wed Apr 16 1975 20:20:36 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 9,
+            "exitStatus": {
+                "exitCode": "COMPLETED"
+            }
+        },
+        {
+            "id": 21,
+            "duration": "5:5:28",
+            "jobParameters": "Poole",
+            "startDate": "Fri Aug 21 1998 04:17:53 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Fri Feb 07 2014 16:27:48 GMT+0100 (Paris, Madrid)",
+            "stepExecutionCount": 6,
+            "exitStatus": {
+                "exitCode": "FAILED"
+            }
+        },
+        {
+            "id": 22,
+            "duration": "9:52:27",
+            "jobParameters": "Leah",
+            "startDate": "Tue Apr 24 1984 21:13:31 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Thu Aug 27 1998 12:49:49 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 1,
+            "exitStatus": {
+                "exitCode": "UNKNOWN"
+            }
+        },
+        {
+            "id": 23,
+            "duration": "5:30:49",
+            "jobParameters": "Susana",
+            "startDate": "Fri Jun 03 2011 19:52:46 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Fri May 08 1970 18:32:29 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 0,
+            "exitStatus": {
+                "exitCode": "FAILED"
+            }
+        },
+        {
+            "id": 24,
+            "duration": "0:11:22",
+            "jobParameters": "Katelyn",
+            "startDate": "Sat Sep 11 1999 19:00:06 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Wed Nov 16 1977 21:57:43 GMT+0100 (Paris, Madrid)",
+            "stepExecutionCount": 8,
+            "exitStatus": {
+                "exitCode": "FAILED"
+            }
+        },
+        {
+            "id": 25,
+            "duration": "8:10:56",
+            "jobParameters": "Sophia",
+            "startDate": "Fri Jun 01 1984 01:08:14 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Sun Sep 13 1998 21:03:34 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 0,
+            "exitStatus": {
+                "exitCode": "UNKNOWN"
+            }
+        },
+        {
+            "id": 26,
+            "duration": "2:4:34",
+            "jobParameters": "Bruce",
+            "startDate": "Sat May 12 1973 04:40:43 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Sun Nov 07 1971 10:24:16 GMT+0100 (Paris, Madrid)",
+            "stepExecutionCount": 5,
+            "exitStatus": {
+                "exitCode": "COMPLETED"
+            }
+        },
+        {
+            "id": 27,
+            "duration": "8:3:9",
+            "jobParameters": "Conrad",
+            "startDate": "Fri Aug 29 1980 04:46:53 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Thu Jul 04 1974 01:04:10 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 5,
+            "exitStatus": {
+                "exitCode": "COMPLETED"
+            }
+        },
+        {
+            "id": 28,
+            "duration": "7:14:9",
+            "jobParameters": "Walls",
+            "startDate": "Mon Jul 13 1970 18:58:33 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Thu Sep 15 2005 06:51:28 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 6,
+            "exitStatus": {
+                "exitCode": "FAILED"
+            }
+        },
+        {
+            "id": 29,
+            "duration": "1:29:34",
+            "jobParameters": "Lucas",
+            "startDate": "Thu May 06 1982 02:54:43 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Thu May 07 1981 17:16:54 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 4,
+            "exitStatus": {
+                "exitCode": "UNKNOWN"
+            }
+        },
+        {
+            "id": 30,
+            "duration": "2:34:59",
+            "jobParameters": "Carla",
+            "startDate": "Tue Aug 18 1981 11:47:43 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Sat Nov 02 1996 17:04:22 GMT+0100 (Paris, Madrid)",
+            "stepExecutionCount": 3,
+            "exitStatus": {
+                "exitCode": "COMPLETED"
+            }
+        },
+        {
+            "id": 31,
+            "duration": "4:25:9",
+            "jobParameters": "Candy",
+            "startDate": "Tue Jun 20 2006 02:06:42 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Thu Sep 28 1972 01:03:46 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 8,
+            "exitStatus": {
+                "exitCode": "FAILED"
+            }
+        },
+        {
+            "id": 32,
+            "duration": "9:54:22",
+            "jobParameters": "Mildred",
+            "startDate": "Sat Sep 12 1992 04:58:07 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Fri Dec 18 1998 22:15:35 GMT+0100 (Paris, Madrid)",
+            "stepExecutionCount": 0,
+            "exitStatus": {
+                "exitCode": "COMPLETED"
+            }
+        },
+        {
+            "id": 33,
+            "duration": "4:23:11",
+            "jobParameters": "Dean",
+            "startDate": "Wed Dec 28 1988 08:53:50 GMT+0100 (Paris, Madrid)",
+            "startTime": "Wed May 20 1981 20:09:38 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 10,
+            "exitStatus": {
+                "exitCode": "FAILED"
+            }
+        },
+        {
+            "id": 34,
+            "duration": "1:9:0",
+            "jobParameters": "Patricia",
+            "startDate": "Mon Aug 17 1981 13:42:41 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Fri Jun 24 1994 02:59:56 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 2,
+            "exitStatus": {
+                "exitCode": "COMPLETED"
+            }
+        },
+        {
+            "id": 35,
+            "duration": "4:6:1",
+            "jobParameters": "Mays",
+            "startDate": "Tue Feb 10 2015 12:56:04 GMT+0100 (Paris, Madrid)",
+            "startTime": "Mon Sep 05 1983 16:09:37 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 6,
+            "exitStatus": {
+                "exitCode": "UNKNOWN"
+            }
+        },
+        {
+            "id": 36,
+            "duration": "0:53:21",
+            "jobParameters": "Foster",
+            "startDate": "Tue Jun 11 2002 03:56:59 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Mon Sep 27 1999 23:18:20 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 1,
+            "exitStatus": {
+                "exitCode": "COMPLETED"
+            }
+        },
+        {
+            "id": 37,
+            "duration": "2:22:47",
+            "jobParameters": "Deena",
+            "startDate": "Sat Jul 23 2011 13:02:14 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Mon Apr 27 1970 08:40:27 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 2,
+            "exitStatus": {
+                "exitCode": "COMPLETED"
+            }
+        },
+        {
+            "id": 38,
+            "duration": "2:1:6",
+            "jobParameters": "Harmon",
+            "startDate": "Fri Jun 06 1997 00:47:34 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Mon Jul 02 2001 03:05:35 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 1,
+            "exitStatus": {
+                "exitCode": "UNKNOWN"
+            }
+        },
+        {
+            "id": 39,
+            "duration": "0:37:36",
+            "jobParameters": "Hernandez",
+            "startDate": "Mon Jun 24 1974 04:46:14 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Wed Apr 05 2006 21:28:33 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 10,
+            "exitStatus": {
+                "exitCode": "COMPLETED"
+            }
+        },
+        {
+            "id": 40,
+            "duration": "3:28:51",
+            "jobParameters": "Jannie",
+            "startDate": "Sat Jul 27 1985 03:51:14 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Wed Apr 01 2009 01:16:59 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 1,
+            "exitStatus": {
+                "exitCode": "COMPLETED"
+            }
+        },
+        {
+            "id": 41,
+            "duration": "1:38:8",
+            "jobParameters": "Mason",
+            "startDate": "Sun Jul 25 1999 17:13:26 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Sat Apr 20 1985 11:01:05 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 0,
+            "exitStatus": {
+                "exitCode": "UNKNOWN"
+            }
+        },
+        {
+            "id": 42,
+            "duration": "7:41:38",
+            "jobParameters": "Carney",
+            "startDate": "Sat Mar 07 1981 19:39:33 GMT+0100 (Paris, Madrid)",
+            "startTime": "Fri Apr 18 1986 09:34:05 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 0,
+            "exitStatus": {
+                "exitCode": "UNKNOWN"
+            }
+        },
+        {
+            "id": 43,
+            "duration": "6:27:36",
+            "jobParameters": "Cecelia",
+            "startDate": "Thu Aug 02 2007 18:21:27 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Wed Jun 23 1999 06:21:48 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 7,
+            "exitStatus": {
+                "exitCode": "FAILED"
+            }
+        },
+        {
+            "id": 44,
+            "duration": "1:12:41",
+            "jobParameters": "Henson",
+            "startDate": "Sun Jun 26 1983 10:34:13 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Tue Jul 01 1975 03:07:00 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 9,
+            "exitStatus": {
+                "exitCode": "COMPLETED"
+            }
+        },
+        {
+            "id": 45,
+            "duration": "0:11:49",
+            "jobParameters": "Cox",
+            "startDate": "Sun Jan 08 1989 10:10:13 GMT+0100 (Paris, Madrid)",
+            "startTime": "Tue Aug 29 1989 07:11:07 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 2,
+            "exitStatus": {
+                "exitCode": "FAILED"
+            }
+        },
+        {
+            "id": 46,
+            "duration": "5:51:46",
+            "jobParameters": "Pierce",
+            "startDate": "Tue May 31 1983 02:08:04 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Tue Feb 10 1981 22:30:48 GMT+0100 (Paris, Madrid)",
+            "stepExecutionCount": 10,
+            "exitStatus": {
+                "exitCode": "COMPLETED"
+            }
+        },
+        {
+            "id": 47,
+            "duration": "2:54:19",
+            "jobParameters": "Aline",
+            "startDate": "Thu Nov 12 1987 07:43:35 GMT+0100 (Paris, Madrid)",
+            "startTime": "Wed Mar 14 2007 06:33:40 GMT+0100 (Paris, Madrid)",
+            "stepExecutionCount": 5,
+            "exitStatus": {
+                "exitCode": "UNKNOWN"
+            }
+        },
+        {
+            "id": 48,
+            "duration": "10:52:48",
+            "jobParameters": "Delgado",
+            "startDate": "Thu Jun 21 2007 06:40:19 GMT+0200 (Paris, Madrid (heure d’été))",
+            "startTime": "Sun Jan 22 2012 17:50:37 GMT+0100 (Paris, Madrid)",
+            "stepExecutionCount": 2,
+            "exitStatus": {
+                "exitCode": "UNKNOWN"
+            }
+        },
+        {
+            "id": 49,
+            "duration": "2:37:52",
+            "jobParameters": "Adams",
+            "startDate": "Mon Jan 22 1979 08:18:51 GMT+0100 (Paris, Madrid)",
+            "startTime": "Sun Mar 31 1991 18:57:06 GMT+0200 (Paris, Madrid (heure d’été))",
+            "stepExecutionCount": 10,
+            "exitStatus": {
+                "exitCode": "FAILED"
+            }
+        }
+    ]
+}

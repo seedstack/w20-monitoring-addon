@@ -1,0 +1,16 @@
+{
+    "percentageComplete": 0.2,
+    "stepExecutionDetailsRepresentation": {
+        "readCount": "2",
+        "writeCount": "34",
+        "commitCount": "12",
+        "rollbackCount": "23",
+        "executionContext": "executionContext",
+        "failureExceptions": "failureExceptions",
+        "startDate": "15th May 2015",
+        "startTime": "11:00:00",
+        "endTime": "12:00:00",
+        "duration": "1:00:00",
+        "percentageComplete": 0.20
+    }
+}

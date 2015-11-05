@@ -1,0 +1,114 @@
+<!--
+
+    Copyright (c) 2013-2015 by The SeedStack authors. All rights reserved.
+
+    This file is part of SeedStack, An enterprise-oriented full development stack.
+
+    This Source Code Form is subject to the terms of the Mozilla Public
+    License, v. 2.0. If a copy of the MPL was not distributed with this
+    file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+-->
+<div class="seed-batch container-fluid" data-on-resize data-do="resizeGrids()">
+    <!-- HEADER -->
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="seed-batch-header">
+                <i class="fa fa-dashboard"></i> {{ "application.view.w20-monitoring-addon.maintitle" | localize }}
+            </h1>
+            <div data-breadcrumb data-base-path="batch/jobs-list"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- STEP EXECUTION PROGRESS CHART -->
+        <div class="col-md-12">
+            <h4>{{ "application.view.w20-monitoring-addon.stepsduration" | localize }} {{ selectedJobExecutionId}}</h4>
+            <div id="discretebar" data-w20-discrete-bar-chart="discreteBarConfig"></div>
+        </div>
+
+        <!-- STEP NAMES  -->
+        <div class="col-md-12">
+            <h4>{{ "application.view.w20-monitoring-addon.steps" | localize }} (job execution id = {{ selectedJobExecutionId}})</h4>
+
+            <div class="list-group">
+                <div data-ng-repeat="step in steps" class="item list-group-item col-md-12">
+                    <div class="col-md-3">
+                        <small> {{ "application.view.w20-monitoring-addon.name" | localize }}</small>
+                        <span class="bold">{{ step.name }}</span>
+                        <br/>
+                        <small> {{ "application.view.w20-monitoring-addon.id" | localize }}</small>
+                        <span class="bold">{{ step.id }}</span>
+                        <br/>
+                        <span class="bold" data-ng-class="{'completed': step.status === 'COMPLETED', 'failed': step.status === 'FAILED'}">
+                            {{ step.status }}
+                        </span>
+                        <br/><br/>
+                        <button class="btn btn-success btn-xs" data-ng-click="showFullDetails(step.id)">
+                            {{ "application.view.w20-monitoring-addon.fulldetails" | localize }}
+                        </button>
+                        <button class="btn btn-info btn-xs" data-ng-click="showHistory(step.id)">
+                            {{ "application.view.w20-monitoring-addon.history" | localize }}
+                        </button>
+                        <div data-show-status-modal></div>
+                        <div data-show-history-modal></div>
+                    </div>
+                    <div class="col-md-9" style="padding: 0">
+                        <div class="col-md-11">
+                            <p>{{step.stepExecutionProgress.estimatedPercentCompleteMessage.defaultMessage}}</p>
+
+                            <div class="alert alert-danger"
+                                 data-ng-show="step.status === 'FAILED'">
+                                <b> {{ "application.view.w20-monitoring-addon.failedstep" | localize }} </b>
+                                <button class="btn btn-danger btn-sm pull-right"
+                                        data-ng-click="showFullDetails(step.id)">
+                                    {{ 'application.view.w20-monitoring-addon.statussteperror' | localize }}
+                                </button>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="alert alert-success"
+                                 data-ng-show="step.status === 'COMPLETED'">
+                                <b> {{ "application.view.w20-monitoring-addon.stepSuccessfully" | localize }}</b>
+
+                                <div class="clearfix"></div>
+                            </div>
+                            <div data-ng-hide="step.status === 'FAILED' || step.status === 'COMPLETED'"
+                                 class="progress active">
+
+                                <div class="progress-bar progress-bar-success"
+                                     data-role="progressbar"
+                                     data-aria-valuemax="100"
+                                     data-ng-style="{width :  (step.stepExecutionProgress.percentageComplete * 100) + '%'  }">
+                                    <span>{{ step.stepExecutionProgress.percentageComplete * 100 }}%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="padding: 0">
+                            <div class="col-md-3">
+                                <small class="stats-label"><i class="fa fa-calendar"></i> {{ "application.view.w20-monitoring-addon.startDate" | localize }}</small>
+                                <span class="bold">{{ step.startDate }}</span>
+                            </div>
+                            <div class="col-md-3">
+                                <small class="stats-label"><i class="fa fa-play"></i> {{ "application.view.w20-monitoring-addon.startTime" | localize }}</small>
+                                <span class="bold">{{ step.startTime }}</span>
+                            </div>
+                            <div class="col-md-3">
+                                <small class="stats-label"><i class="fa fa-stop"></i> {{ "application.view.w20-monitoring-addon.endTime" | localize }}</small>
+                                <span class="bold">{{ step.endTime }}</span>
+                            </div>
+                            <div class="col-md-3">
+                                <small class="stats-label"><i class="fa fa-clock-o"></i> {{ "application.view.w20-monitoring-addon.duration" | localize }}</small>
+                                <span class="bold">{{ step.duration }}</span>
+                            </div>
+                            <div class="col-md-3" data-ng-repeat="announce in step.announcements">
+                                <small class="stats-label"><i class="fa {{ announce.icon }}"></i> {{ announce.text }}</small>
+                                <span class="bold">{{ announce.val }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

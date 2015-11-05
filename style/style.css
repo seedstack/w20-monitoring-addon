@@ -1,0 +1,100 @@
+/**
+ * Copyright (c) 2013-2015, The SeedStack authors <http://seedstack.org>
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+/******** Titles **********/
+
+.seed-batch h1 {
+    color: #666666;
+    border-bottom: none;
+}
+
+.seed-batch h4 {
+    color: #666666;
+    font-size: 18px;
+}
+
+.seed-batch .item:hover {
+    cursor: pointer;
+    background-color: #F8F8F8;
+}
+
+.seed-batch .progress-label {
+    color: #45983e;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.seed-batch .failed-label {
+    color: #FB5858;
+    font-size: 25px;
+}
+
+
+/******** Header **********/
+
+.seed-batch .seed-batch-header {
+    font-size: 24px;
+}
+
+.seed-batch .breadcrumb {
+    background-color: inherit;
+}
+
+.seed-batch .breadcrumb.batch li a {
+    color:#000 !important;
+    font-size: 18px;
+}
+
+/********* Charts **************/
+
+.seed-batch #discretebar {
+    height: 150px;
+}
+
+.seed-batch .pieChart {
+    position: absolute;
+    z-index: 100;
+    top: -35px;
+    left: -60px;
+    height: 100px;
+    width: 165px;
+}
+
+/********* Override ***********/
+
+.seed-batch .no-margin {
+    margin: 0 !important;
+}
+
+.seed-batch .pagination > .active > a,
+.seed-batch .pagination > .active > a:hover {
+    background-color: #666666;
+    border-color: #666666;
+}
+
+.seed-batch .pagination a {
+    color: inherit;
+}
+
+/********** Label ***************/
+
+.seed-batch .bold {
+    font-weight:700;
+}
+
+.seed-batch .completed {
+    color:#54B496;
+}
+
+.seed-batch .failed {
+    color:#ee5f5b;
+}
+
+/******** List ***************/
+.seed-batch .jobs-list .list-group-item {
+    z-index: 10;
+}
