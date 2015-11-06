@@ -62,7 +62,7 @@
                 <div data-ng-show="!jobsList.length" class="alert alert-info">
                     {{ "application.view.w20-monitoring-addon.noResults" | localize }}
                 </div>
-                <div class="list-group">
+                <div class="list-group jobs-list">
                     <div data-ng-repeat="job in jobsList"
                          data-ng-hide="failedOnly && chartOverallProgressData[job.name].failed < 1"
                          data-ng-click="selectJob(job)"

@@ -93,3 +93,8 @@
 .seed-batch .failed {
     color:#ee5f5b;
 }
+
+/******** List ***************/
+.seed-batch .jobs-list .list-group-item {
+    z-index: 10;
+}
