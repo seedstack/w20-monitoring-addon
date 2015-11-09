@@ -44,7 +44,7 @@ define([
                         } else if ($routeParams.jobName) {
                             $location.path('/w20-monitoring-addon/jobs-list/');
                         }
-                    }
+                    };
                 }
             };
         }]);
