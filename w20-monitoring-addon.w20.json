@@ -12,7 +12,7 @@
       "path": "{w20-monitoring-addon}/modules/batch",
       "autoload": true,
       "config": {
-        "restPrefix": "${seed-rest-path:/rest}"
+        "restPrefix": "${seed-rest-path-slash:}seed-monitoring"
       }
     },
     "directives": {
