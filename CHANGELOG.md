@@ -1,3 +1,7 @@
+# Version 2.1.2 (?)
+
+* [chg] Update for SeedStack 16.4
+
 # Version 2.1.1 (2016-03-04)
 
 * [fix] Fix bower dependencies which was wrongly choosing AngularJS 1.5
