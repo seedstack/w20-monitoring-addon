@@ -1,4 +1,4 @@
-# Version 2.1.2 (?)
+# Version 2.1.2 (2016-04-28)
 
 * [chg] Update for SeedStack 16.4
 
