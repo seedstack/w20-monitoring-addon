@@ -18,6 +18,21 @@
     "directives": {
       "path": "{w20-monitoring-addon}/modules/directives",
       "autoload": true
+    },
+    "mqtt": {
+      "path": "{w20-monitoring-addon}/modules/mqtt",
+      "autoload": true,
+      "config": {
+        "restPrefix": "/seed-monitoring/mqtt"
+      },
+      "configSchema": {
+        "properties": {
+          "baseURL": {
+            "description": "URL of the server exposing MQTT monitoring resources",
+            "type": "string"
+          }
+        }
+      }
     }
   },
   "w20-core": {
@@ -61,6 +76,12 @@
       "templateUrl": "{w20-monitoring-addon}/views/step-details.html",
       "controller": "StepDetailsController",
       "security": "hasPermission('seed-w20', ['seed','monitoring','batch','read'])",
+      "hidden": true
+    },
+    "/mqtt": {
+      "templateUrl": "{w20-monitoring-addon}/views/mqtt.html",
+      "controller": "MqttMonitoringCtrl",
+      "security": "hasPermission('seed-w20', ['seed','monitoring','mqtt','read'])",
       "hidden": true
     }
   }
