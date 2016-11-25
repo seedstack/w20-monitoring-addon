@@ -12,10 +12,10 @@ define([
 
     mqtt.factory('MqttClientService', ['HomeService', function (homeService) {
         return {
-            halService: function (instance) {
-                var href = config.baseURL + config.restPrefix + '/clients';
-                if (instance) {
-                    href = config.baseURL + config.restPrefix + '/' + instance + '/clients';
+            halService: function (wildcardPath) {
+                var href = config.baseUrl + '/clients';
+                if (wildcardPath) {
+                    href = config.baseUrl + '/' + wildcardPath + '/clients';
                 }
 
                 homeService('mqtt').register({
@@ -28,8 +28,8 @@ define([
                 });
                 return homeService('mqtt').enter('clients');
             },
-            list: function (success, error, instance) {
-                this.halService(instance).get(success, error);
+            list: function (success, error, wildcardPath) {
+                this.halService(wildcardPath).get(success, error);
             },
             single: function (client, success, error) {
                 return client.$links('self').get(success, error);
