@@ -22,14 +22,6 @@
       "autoload": true,
       "config": {
         "baseUrl": "/seed-monitoring/mqtt"
-      },
-      "configSchema": {
-        "properties": {
-          "baseURL": {
-            "description": "URL of the server exposing MQTT monitoring resources",
-            "type": "string"
-          }
-        }
       }
     }
   },

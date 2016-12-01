@@ -37,7 +37,7 @@ define([
         };
     }]);
 
-    mqtt.controller('MqttMonitoringCtrl', ['$scope', '$interval', '$location', 'MqttClientService', function ($scope, $interval, $location, mqttClientService) {
+    mqtt.controller('MqttMonitoringCtrl', ['$scope', '$interval', '$location', '$log', 'MqttClientService', function ($scope, $interval, $location, $log, mqttClientService) {
 
         $scope.autoRefresh = {
             "enable": false,
@@ -49,10 +49,7 @@ define([
             if (!$scope.autoRefresh.enable) {
                 refresh = $interval(loadClientList, $scope.autoRefresh.interval * NB_MS_IN_S);
             } else {
-                if (angular.isDefined(refresh)) {
-                    $interval.cancel(refresh);
-                    refresh = undefined;
-                }
+                cancelInterval();
             }
             $scope.autoRefresh.enable = !$scope.autoRefresh.enable;
         };
@@ -63,6 +60,10 @@ define([
                 refresh = $interval(loadClientList, $scope.autoRefresh.interval * NB_MS_IN_S);
             }
         };
+
+        $scope.$on('$routeChangeStart', function () {
+            cancelInterval();
+        });
 
         $scope.displayClient = function (client) {
             if (!$scope.currentClient || $scope.currentClient.clientId != client.clientId) {
@@ -89,6 +90,13 @@ define([
             return result;
         };
 
+        function cancelInterval() {
+            if (angular.isDefined(refresh)) {
+                $interval.cancel(refresh);
+                refresh = undefined;
+            }
+        }
+
         function updateInstance() {
             var path = $location.path().split("/");
             var instIdx = path.indexOf("instance");
@@ -104,7 +112,7 @@ define([
         }
 
         function requestError(err) {
-            throw new Error('could not get mqtt clients ' + err.message);
+            $log.error('could not get mqtt clients : ' + err.message);
         }
 
         updateInstance();

@@ -28,10 +28,10 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr data-ng-repeat="client in clients" data-ng-click="displayClient(client)">
+                <tr data-ng-repeat="client in clients | orderBy : 'clientId'" data-ng-click="displayClient(client)">
                     <td>{{client.clientId}}</td>
                     <td class="text-center mqtt-status">
-                        <span data-ng-class="{'fa fa-arrow-circle-up text-success': client.connected, 'fa fa-arrow-circle-down text-danger': !client.connected}"></span>
+                        <span data-ng-class="{'fa fa-check-circle text-success': client.connected, 'fa fa-times-circle text-danger': !client.connected}"></span>
                     </td>
                 </tr>
                 </tbody>
@@ -55,7 +55,7 @@
             <div class="col-lg-6 col-md-12">
                 <h3 class="mqtt-heading">topics</h3>
                 <ul class="list-unstyled">
-                    <li class="col-lg-6" data-ng-repeat="topic in currentClient.topics">{{topic}}</li>
+                    <li data-ng-repeat="topic in currentClient.topics">{{topic}}</li>
                 </ul>
             </div>
         </div>
