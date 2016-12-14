@@ -21,7 +21,7 @@
       "path": "{w20-monitoring-addon}/modules/mqtt",
       "autoload": true,
       "config": {
-        "baseUrl": "/seed-monitoring/mqtt"
+        "baseUrl": "${seed-rest-path-slash:}seed-monitoring/mqtt"
       }
     }
   },
@@ -71,8 +71,7 @@
     "/mqtt": {
       "templateUrl": "{w20-monitoring-addon}/views/mqtt.html",
       "controller": "MqttMonitoringCtrl",
-      "security": "hasPermission('seed-w20', ['seed','monitoring','mqtt','read'])",
-      "hidden": true
+      "security": "hasPermission('seed-w20', ['seed','monitoring','mqtt','read'])"
     }
   }
 }
