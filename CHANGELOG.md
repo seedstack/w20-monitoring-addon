@@ -1,3 +1,7 @@
+# Version 2.2.1 (2016-12-15)
+
+* [chg] Add security on MQTT monitoring page.
+
 # Version 2.2.0 (2016-11-24)
 
 * [new] Add MQTT monitoring page.
