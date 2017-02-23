@@ -1,3 +1,7 @@
+# Version 2.2.2 (2017-02-23)
+
+* [fix] Fix URL path building.
+
 # Version 2.2.1 (2016-12-15)
 
 * [chg] Add security on MQTT monitoring page.
