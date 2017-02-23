@@ -21,7 +21,7 @@
       "path": "{w20-monitoring-addon}/modules/mqtt",
       "autoload": true,
       "config": {
-        "baseUrl": "${seed-rest-path-slash:}seed-monitoring/mqtt"
+        "apiUrl": "${seed-rest-path-slash:}seed-monitoring/mqtt"
       }
     }
   },
